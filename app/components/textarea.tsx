@@ -13,7 +13,7 @@ interface input {
   cols?:number,
   Icon?: React.ElementType,
   iconClass?: string,
-  onChange?: () => void,
+  onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void,
   
 }
 const Textarea: React.FC<input> = ({ name, id, value, label, placeholder, className, readOnly, required, rows, cols, Icon, iconClass, onChange }) => {

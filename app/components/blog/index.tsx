@@ -49,7 +49,6 @@ function Blog() {
                                 <p className='italic text-white/60 text-sm pb-3'>Date: {item.date}</p>
                                 <h2 className='text-lg text-white font-medium py-5 border-t border-white/10'>{item.title}</h2>
                                 <button className='text-white font-medium hover:opacity-55 ease-in-out duration-200' onClick={() => toggleDropdown(index)}>Read more</button>
-
                             </div>
                             {viewmodal === index &&
                                 <Modal onClick={() => toggleDropdown(index)}>

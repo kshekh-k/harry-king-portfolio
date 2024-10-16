@@ -12,7 +12,7 @@ interface input {
   required?: boolean,
   Icon?: React.ElementType,
   iconClass?: string,
-  onChange?: () => void,
+  onChange?:(event: React.ChangeEvent<HTMLInputElement>) => void,
   
 }
 const Input: React.FC<input> = ({ type, name, id, value, label, placeholder, className, readOnly, required, Icon, iconClass, onChange }) => {
